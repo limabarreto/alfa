@@ -290,6 +290,11 @@ th {
     margin-top: 130px;
 
 }
+.div2{
+    background-color: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 div.dropdown-content:hover {}
 
