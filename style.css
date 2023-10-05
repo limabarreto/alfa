@@ -148,12 +148,15 @@ h1 {
     padding-bottom: 300px;
     margin-top: 300px;
 }
-.cor1{
+
+.cor1 {
     background-color: #52A4BF;
 }
-.cor2{
+
+.cor2 {
     background-color: #8BB6C2;
 }
+
 th,
 td {
     text-align: center;
@@ -162,8 +165,9 @@ td {
     /* Adiciona espaço interno para melhorar a aparência */
     border: none;
     /* Adiciona uma borda fina ao redor das células */
-    
+
 }
+
 th {
     background-color: #52A4BF;
     /* Cor de fundo para o cabeçalho da tabela */
@@ -278,8 +282,6 @@ th {
     padding-top: 40px;
     width: 100px;
     height: 130px;
-
-
 }
 
 .menu li.dropdown:hover {
@@ -290,7 +292,8 @@ th {
     margin-top: 130px;
 
 }
-.div2{
+
+.div2 {
     background-color: #ffffff;
     padding-left: 100px;
     padding-right: 100px;
