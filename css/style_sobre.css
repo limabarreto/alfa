@@ -1,0 +1,69 @@
+ /* CSS PAGINA SOBRE*/
+ .alfa {
+    height: 60px;
+    background-color: #8BB6C2;
+    overflow-y: hidden;
+  }
+ 
+  .sobre {
+    display: flex;
+    justify-content: center;
+    /* Centralizar horizontalmente os elementos dentro da div .sobre */
+    align-items: center;
+    /* Centralizar verticalmente os elementos dentro da div .sobre */
+    height: 500px;
+ 
+  }
+ 
+  .img {
+    height: 400px;
+    width: 500px;
+    float: left;
+  }
+ 
+  .texto {
+    width: 500px;
+    padding-left: 50px;
+  }
+ 
+ 
+  /* ... carrossel ... */
+ 
+  .carousel {
+    width: 50%;
+    /* Ajuste a largura do carrossel para ocupar toda a tela */
+    height: fit-content;
+    /* Ajuste a altura do carrossel para ocupar toda a tela */
+    /* Posicionar o carrossel à direita */
+    /* Adicionar margem para separar do conteúdo anterior */
+  }
+ 
+  .main-image img {
+    width: 100%;
+    /* Imagem ocupa 100% da largura do contêiner (div .main-image) */
+    height: 100%;
+    /* Imagem ocupa 100% da altura do contêiner (div .main-image) */
+    object-fit: contain;
+    /* Redimensionar a imagem para caber completamente dentro do contêiner */
+  }
+ 
+  .thumbnails img {
+    width: 14%;
+    /* Defina a largura desejada para as imagens em miniatura */
+    margin: 5px;
+    /* Defina a margem entre as miniaturas */
+    cursor: pointer;
+    /* Adicione um cursor para indicar que as miniaturas são clicáveis */
+  }
+ 
+  .carrosel-area {
+ 
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+  }
+ 
+ 
+  /* ... Seus estilos CSS posteriores ... */

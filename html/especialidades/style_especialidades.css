@@ -1,0 +1,108 @@
+body {
+    overflow-x: hidden;
+    align-content: center;
+}
+
+.alfa {
+    height: 60px;
+    background-color: #8BB6C2;
+}
+
+h3 {
+    text-align: center;
+    color: #52A4BF;
+    padding-top: 50px;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    /* Centralizar horizontalmente os elementos dentro da div .sobre */
+    align-items: center;
+    /* Centralizar verticalmente os elementos dentro da div .sobre */
+    height: 500px;
+
+}
+
+
+.menu_cards {
+    display: grid;
+    justify-content: center;
+    /* Centralizar os cards horizontalmente */
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 400px 400px 400px;
+    gap: 5%;
+    /* Adicionar espaçamento entre os cards */
+    width: 100vw;
+    height: fit-content;
+    padding: 5%;
+}
+
+/*Resolução de celular*/
+@media (min-width: 370px) and (max-width: 820px) {
+    .menu_cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Resolução de tablet*/
+@media (min-width: 820px) and (max-width: 1200px) {
+    .menu_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+    }
+}
+
+/*Resolução de pc e telas maires*/
+@media (min-width: 1201px) {
+    .menu_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: column;
+    }
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+    background-color: #8BB6C2;
+    border: 1px solid #ccc;
+    /* Adicionar uma borda para destacar os cards */
+    border-radius: 10px;
+    overflow: hidden;
+    /* Esconder conteúdo que possa ultrapassar o card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adicionar uma sombra para dar destaque */
+    transition: transform 0.3s ease;
+    /* Adicionar uma transição */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* Aumentar o tamanho do card1 ao passar o mouse */
+}
+
+
+.img_card {
+    width: 100%;
+    /* A imagem ocupará toda a largura do card */
+    height: 250px;
+    text-align: center;
+    object-fit: cover;
+    /* Redimensionar a imagem para preencher todo o espaço disponível */
+    border-top-left-radius: 10px;
+    /* Adicionar bordas arredondadas somente no canto superior esquerdo */
+    border-top-right-radius: 10px;
+    /* Adicionar bordas arredondadas somente no canto superior direito */
+}
+
+.card,
+.descricao {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    /* Adicionar espaçamento interno para a descrição */
+    text-align: center;
+    /* Centralizar o texto dentro do card */
+}

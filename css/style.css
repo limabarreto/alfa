@@ -1,0 +1,306 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Jost:wght@200&family=Share+Tech+Mono&display=swap');
+*/
+.sessao1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    /*background-image: url(../images/degradê_médico/img_2.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    height: 490px;
+}
+
+body {
+    margin: 0;
+    /*font-family: 'Istok Web', sans-serif;*/
+    font-family: 'Jost', sans-serif;
+    /*font-family: 'Share Tech Mono', monospace;*/
+}
+
+.alfa {
+    gap: 45%;
+    align-items: center;
+
+}
+
+.alighn-setup {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+    border: none;
+    font-weight: bold;
+    float: right;
+    width: fit-content;
+    padding: 0;
+}
+
+.menu2 {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.menu2 a {
+    text-align: left;
+    padding-left: 13px;
+
+}
+
+.menu2 img {
+    padding-top: 100px;
+    color: #333;
+}
+
+a.menu-link {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 0;
+    height: fit-content;
+}
+
+li.top-menu {
+    display: flex;
+    padding: 0px;
+}
+
+a.menu-link:hover {
+    background-color: #52A4BF;
+    transition: background-color 0.3s ease;
+
+}
+
+h1 {
+    margin-left: 70px;
+    color: #ffffff;
+}
+
+.redes ul a h3 {
+    text-decoration: none;
+}
+
+.texto {
+    color: #52A4BF;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto h3 {
+    color: #333;
+    font-size: 18px;
+    padding-right: 1100px;
+
+}
+
+.texto h1 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.bemvindo {
+    text-align: center;
+    color: #52A4BF;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.caixa2 {
+    text-align: center;
+    padding-left: 400px;
+}
+
+.tabela {
+    width: 60%;
+    /* Define a largura da tabela */
+    margin: 0 auto;
+    /* Centraliza a tabela horizontalmente */
+    /*Remove espaços entre as células */
+    text-transform: uppercase;
+    padding-bottom: 300px;
+    margin-top: 300px;
+}
+.cor1{
+    background-color: #52A4BF;
+}
+.cor2{
+    background-color: #8BB6C2;
+}
+th,
+td {
+    text-align: center;
+    /* Centraliza o conteúdo das células */
+    padding: 10px;
+    /* Adiciona espaço interno para melhorar a aparência */
+    border: none;
+    /* Adiciona uma borda fina ao redor das células */
+    
+}
+th {
+    background-color: #52A4BF;
+    /* Cor de fundo para o cabeçalho da tabela */
+}
+
+.botao_w {
+    float: left;
+    /* Flutuar o botão para a esquerda */
+    margin: 50px;
+    /* Adicionar margem para espaçamento */
+    padding: 15px 15px;
+    background-color: #52A4BF;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 8px #0000003f;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    /* Posicionar o botão à esquerda */
+    font-weight: bold;
+    /* Remover o sublinhado padrão do link */
+    transition: background-color 0.3s ease;
+}
+
+
+.botao {
+    float: right;
+    /* Flutuar o botão para a direita */
+    margin: 50px;
+    /* Adicionar margem para espaçamento */
+    padding: 15px 15px;
+    background-color: #52A4BF;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 8px #0000003f;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    /* Remover o sublinhado padrão do link */
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #8BB6C2;
+    /* Cor de fundo do botão ao passar o mouse */
+}
+
+.botao_w:hover {
+    background-color: #8BB6C2;
+    /* Cor de fundo do botão ao passar o mouse */
+}
+
+.caixa2 h3 {
+    text-align: center;
+    color: #52A4BF;
+    margin-top: -10px;
+    padding: -150px;
+
+}
+
+.caixa2 {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #8BB6C2;
+}
+
+/*menu dropdown*/
+/* Estilizando o menu e o dropdown */
+.alfa ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.alfa a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+/* Estilizando o dropdown */
+.dropdown div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a5a5a5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Mostrar o dropdown ao passar o mouse */
+.menu li.dropdown:hover div.dropdown-content {
+    display: block;
+
+}
+
+.logo img {
+    padding-top: 40px;
+    width: 100px;
+    height: 130px;
+
+
+}
+
+.menu li.dropdown:hover {
+    background-color: #52A4BF;
+    overflow-y: auto;
+    display: block;
+    height: 150px;
+    margin-top: 130px;
+
+}
+
+div.dropdown-content:hover {}
+
+.menu li.dropdown {}
+
+div.dropdown-content a:hover {
+    background-color: #52A4BF;
+    transition: background-color 0.3s ease;
+}
+
+div.dropdown-content a {
+    display: flex;
+
+}
