@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    
+}
+  
+.alighn-setup {
+    background-image: url("../alfa/images/medicos-tem-de-saber-lidar-com-pacientes-experts.jpg");
+    background-size: cover; /* Define como a imagem deve se ajustar à div */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
+    /* Outras propriedades opcionais, como background-color, opacity, etc. */
+
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 150px;
+    justify-content: space-between; /* Alinhar os elementos ao longo do eixo horizontal */
+    align-items: center; /* Alinhar os elementos ao longo do eixo vertical */
+}
+
+/* 
+.icones {
+    display: flex;
+    flex-direction: row;
+    background-color: #48ff10;
+    align-items: center; Alinhar os elementos ao longo do eixo vertical 
+}
+*/
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    align-items: center; /* Alinhar os elementos ao longo do eixo vertical */
+    height: 100%;
+}
+.horario{
+    background-color: #52A4BF;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    margin-top: 90px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dias{
+    width: 100%;
+}
+
+.seg, .hrs{
+    display: inline-block;
+    width: 48%; /* Define a largura das divs filhas */
+    margin-right: 2%; /* Define uma margem entre as divs */
+}
+.seg{
+    border-right: 3px solid #333; /* Cor e espessura da linha */
+}
+.hrs{
+    margin-right: 0; /* Remove a margem da segunda div para evitar estouro de linha */
+}
+.visita{
+    background-color: #2f94b644;
+    padding-top: 50px;
+}
+
+.visita h3{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.botao{
+    color: #fff; /* Cor do texto branca */
+        background-color: #52A4BF; /* Cor de fundo azul */
+        border: 5px solid #ffffff; /* Borda sólida de 2px azul */
+        border-radius: 25px; /* Cantos arredondados de 5px */
+        padding: 10px 20px; /* 10px de espaço acima/abaixo e 20px de espaço à esquerda/direita */
+        text-align: center; /* Centraliza o texto horizontalmente */
+        cursor: pointer;
+}
+
+.texto3{
+    font-size: 20px;
+    float: left;
+    background-color: #52A4BF;
+    color: #fff;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 120px;
+}
+
+.texto3 p{
+    margin-left: 70px;
+    font-weight: bolder;
+}
+.texto{
+    color: #52A4BF;
+    display: flex;
+    flex-direction: column;
+    
+}
+.texto h1{
+    border-bottom: 5px solid #333; /* Cor e espessura da linha */
+    padding-bottom: 10px;
+}
+.texto h3{
+    padding-top: 70px;
+}
+
+/*
+.icones li {
+    list-style-type: none;
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+}
+*/
+
+.icones {
+    display: flex; /* Adicione esta linha para usar flexbox */
+    flex-direction: row; /* Por padrão, flex-direction é row, então isso não é necessário, mas é bom manter para clareza */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+/* Estilize os ícones individuais */
+.icones img{
+    /* Adicione uma margem direita para separar os ícones horizontalmente */
+    height: 64px;
+    width: 64px;
+} 
+
+.icones li{
+    list-style-type: none;
+    height: fit-content;
+    align-content: center;
+    display: flex;
+
+}
+
+.icones a{
+    list-style-type: none;
+    height: 100%;
+    width: fit-content;
+
+
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    font-weight: bold;
+    margin-right: 100px;
+    height: 30%;
+}
+
+a.menu-link {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li.top-menu {
+    display: flex;
+    padding: 0px;
+}
+
+a.menu-link:hover {
+    background-color: #52A4BF;
+    transition: background-color 0.3s ease;
+}
+
+.alfa ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.alfa a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+/* Estilizando o dropdown */
+.dropdown div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a5a5a5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Mostrar o dropdown ao passar o mouse 
+.menu li.dropdown:hover div.dropdown-content {
+display: block;
+}
+*/
+
+.logo img {
+    width: 100px;
+    height: 130px;
+    padding-right: 150px;
+}
+
+/* 
+.menu li.dropdown:hover {
+background-color: #52A4BF;
+overflow-y: auto;
+display: block;
+height: 150px; Remova esta linha 
+margin-top: 130px;
+}
+*/
+
+.menu li.dropdown:hover {
+    background-color: #52A4BF;
+    overflow-y: auto;
+    display: block;
+}
+
+/* Remova a altura fixa do item de menu */
+.menu li.dropdown:hover div.dropdown-content {
+    height: auto; /* Use altura automática para o conteúdo */
+    margin-top: 0; /* Remova a margem superior */
+}
+
+
+div.dropdown-content:hover {}
+
+.menu li.dropdown {}
+
+div.dropdown-content a:hover {
+    background-color: #52A4BF;
+    transition: background-color 0.3s ease;
+}
+
+div.dropdown-content a {
+    display: flex;
+}
