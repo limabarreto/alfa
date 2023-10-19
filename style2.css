@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+
+}
+.icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.horario {
+    margin-top: 130px;
+    background-color: #52A4BF;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dias {
+    width: 100%;
+}
+
+.seg,
+.hrs {
+    display: inline-block;
+    width: 48%;
+    /* Define a largura das divs filhas */
+    
+    /* Define uma margem entre as divs */
+}
+.seg {
+    border-right: 3px solid #333;
+    /* Cor e espessura da linha */
+}
+
+.visita {
+    background-color: #2f94b644;
+    padding-top: 40px;
+}
+.visita h4 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    /* Cor do texto branca */
+    background-color: #52A4BF;
+    /* Cor de fundo azul */
+    border: 3px solid #ffffff;
+    /* Borda sólida de 2px azul */
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 25px;
+    /* Cantos arredondados de 5px */
+    padding: 10px 20px;
+    /* 10px de espaço acima/abaixo e 20px de espaço à esquerda/direita */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    cursor: pointer;
+}
+.mapa  {
+    width: 300px;
+    height: 150px;
+    background-color: #c1e8f5;
+    float: right;
+    margin-right: 40px;
+    margin-top: 100px;
+}
+
+.logo img {
+    width: 100px;
+    height: 130px;
+    padding-right: 150px;
+}
+.icones{
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    gap: 50px;
+}
+
+iframe{
+    padding-top: 25px;
+    float: right;
+}
+.mapa h3, p{
+    text-align: center;
+}
+
+.texto3 {
+    font-size: 12px;
+    float: left;
+    background-color: #52A4BF;
+    color: #fff;
+    margin-top: 100px;
+    
+}
+
+.texto3 h3, h4 {
+    margin-left: 50px;
+    font-weight: bolder;
+    
+}
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* A366linhar os elementos ao longo do eixo vertical */
+    height: 100%;
+    gap: 30px;
+    position: relative;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column-reverse; /* Inverte a ordem verticalmente */
+}
+
+.email {
+    background-color: #f0f0f0; /* Cor de fundo apenas para visualização */
+}
+
+.texto {
+    color: #bf529e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icones li {
+    list-style-type: none;
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+}
+
+.icones {
+    background-color: #52A4BF;
+    display: flex;
+    /* Adicione esta linha para usar flexbox */
+    flex-direction: row;
+    /* Por padrão, flex-direction é row, então isso não é necessário, mas é bom manter para clareza */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Estilize os ícones individuais */
+.icones img {
+    /* Adicione uma margem direita para separar os ícones horizontalmente */
+    height: 64px;
+    width: 64px;
+}
+
+.icones li {
+    list-style-type: none;
+    height: fit-content;
+    align-content: center;
+    display: flex;
+
+}
+
+.icones a {
+    list-style-type: none;
+    height: 100%;
+    width: fit-content;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #606062;
+}
+
+#top-menu a, li{
+    text-decoration: none;
+    flex-direction: row;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo dos itens da lista */
+nav li {
+    display: inline; /* Faz os itens da lista ficarem lado a lado */
+    margin-right: 20px; /* Espaçamento entre os itens (opcional) */
+}

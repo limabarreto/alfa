@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    padding-right: 80px;
+}
+
+#top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+#top-menu a {
+    text-decoration: none;
+    color: #52A4BF;
+}
+
+#top-menu li {
+
+    margin: 0 10px;
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.icones ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.icones li {
+    margin: 0 10px;
+}
+
+.icones img {
+    max-width: 50px;
+}
+
+.numero {
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: 1px solid #333; /* Adicione uma borda inferior */
+    color: #606062;
+}
+
+
+.email {
+    color: #606062;
+    text-align: center;
+    margin: 0 10px;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+    
+
+.email {
+    margin-top: 10px; /* Adicione um espaçamento entre as duas divs */
+}
+
+.horario {
+    background-color: #ffffff;
+    color: #606062;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.visita {
+    margin-bottom: 10px;
+}
+
+.dias {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.seg,
+.hrs {
+    flex: 1;
+}
+
+button {
+    background-color: #3d9dbd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #2a8fb1; /* Cor de fundo ao passar o cursor */
+    color: #fff; /* Cor do texto ao passar o cursor */
+}
+
+
+
+.mapa {
+    position: absolute;
+    top: 130px;
+    /* Ajuste a distância da parte superior conforme desejado */
+    right: 10px;
+    /* Ajuste a distância da direita conforme desejado */
+    color: #606062;
+    padding: 20px;
+    width: 300px;
+}
+
+iframe {
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+}
+
+
+.texto3 {
+    background-color: #52A4BF;
+    margin-right: 800px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+#top-menu li {
+    margin: 0 10px;
+    position: relative;
+    /* Adicione position relative para o elemento pai (li) */
+}
+
+#top-menu a {
+    text-decoration: none;
+    color: #52A4BF;
+}
+
+/* Adicione um traço antes do link, mas escondido por padrão */
+#top-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    /* Ajuste a posição do traço conforme necessário */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /* Ajuste a espessura do traço conforme necessário */
+    background-color: #606062;
+    /* Cor do traço */
+    transform: scaleX(0);
+    /* Inicialmente escondido (sem largura) */
+    transform-origin: 100% 50%;
+    /* Origem da transformação à direita */
+    transition: transform 0.3s;
+    /* Adicione uma transição suave */
+}
+
+/* Quando passar o cursor, expanda o traço */
+#top-menu a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.texto3 {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa deslocado para baixo */
+    transition: opacity 0.5s, transform 0.5s; /* Adiciona transição suave */
+}
+
+/* Adicione uma classe para ativar o efeito quando a página for carregada */
+.ativo {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Volta à posição original */
+}
+
+body {
+    text-align: center;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    text-align: left;
+    color: #ffffff;
+    background-color: #2a8fb1;
+    padding: 50px;
+    margin-top: 150px;
+}

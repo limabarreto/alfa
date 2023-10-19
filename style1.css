@@ -1,116 +1,173 @@
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
-    
+
 }
-  
-.alighn-setup {
-    background-image: url("../alfa/images/medicos-tem-de-saber-lidar-com-pacientes-experts.jpg");
-    background-size: cover; /* Define como a imagem deve se ajustar à div */
-    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
-    background-position: center; /* Centraliza a imagem horizontalmente e verticalmente */
+
+.imagem {
+   
+  /* background-image: url("images/istockphoto-587952472-1024x1024.jpg");*/
+    /* Define como a imagem deve se ajustar à div */
+    background-repeat: no-repeat;
+    /* Evita que a imagem seja repetida */
+    background-position: center;
+    /* Centraliza a imagem horizontalmente e verticalmente */
     /* Outras propriedades opcionais, como background-color, opacity, etc. */
+}
+
+.alighn-setup {
 
     display: flex;
     flex-direction: row;
     padding-left: 3%;
     padding-right: 3%;
     height: 150px;
-    justify-content: space-between; /* Alinhar os elementos ao longo do eixo horizontal */
-    align-items: center; /* Alinhar os elementos ao longo do eixo vertical */
+    justify-content: space-between;
+    /* Alinhar os elementos ao longo do eixo horizontal */
+    align-items: center;
+    /* Alinhar os elementos ao longo do eixo vertical */
 }
 
-/* 
+
 .icones {
     display: flex;
     flex-direction: row;
-    background-color: #48ff10;
-    align-items: center; Alinhar os elementos ao longo do eixo vertical 
+    align-items: center; 
 }
-*/
+
 
 .info {
     text-align: center;
     display: flex;
     flex-direction: row;
     margin-right: 30px;
-    align-items: center; /* Alinhar os elementos ao longo do eixo vertical */
+    align-items: center;
+    /* Alinhar os elementos ao longo do eixo vertical */
     height: 100%;
 }
-.horario{
+
+.horario {
     background-color: #52A4BF;
     text-align: center;
     height: 200px;
     color: #fff;
-    width: 400px;
+    width: 500px;
     position: absolute;
-    margin-top: 90px;
+    margin-top: 100px;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.dias{
+
+.dias {
     width: 100%;
+    padding-top: 15px;
 }
 
-.seg, .hrs{
+.seg,
+.hrs {
     display: inline-block;
-    width: 48%; /* Define a largura das divs filhas */
-    margin-right: 2%; /* Define uma margem entre as divs */
+    width: 48%;
+    /* Define a largura das divs filhas */
+    margin-right: 2%;
+    /* Define uma margem entre as divs */
 }
-.seg{
-    border-right: 3px solid #333; /* Cor e espessura da linha */
+
+.seg {
+    border-right: 3px solid #333;
+    /* Cor e espessura da linha */
 }
-.hrs{
-    margin-right: 0; /* Remove a margem da segunda div para evitar estouro de linha */
+
+.hrs {
+    margin-right: 0;
+    /* Remove a margem da segunda div para evitar estouro de linha */
 }
-.visita{
+
+.visita {
     background-color: #2f94b644;
     padding-top: 50px;
 }
 
-.visita h3{
+.visita h3 {
     position: absolute;
     top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.botao{
-    color: #fff; /* Cor do texto branca */
-        background-color: #52A4BF; /* Cor de fundo azul */
-        border: 5px solid #ffffff; /* Borda sólida de 2px azul */
-        border-radius: 25px; /* Cantos arredondados de 5px */
-        padding: 10px 20px; /* 10px de espaço acima/abaixo e 20px de espaço à esquerda/direita */
-        text-align: center; /* Centraliza o texto horizontalmente */
-        cursor: pointer;
+
+button {
+    /* Cor do texto branca */
+    background-color: #52A4BF;
+    /* Cor de fundo azul */
+    border: 3px solid #ffffff;
+    /* Borda sólida de 2px azul */
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 25px;
+    /* Cantos arredondados de 5px */
+    padding: 10px 20px;
+    /* 10px de espaço acima/abaixo e 20px de espaço à esquerda/direita */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    cursor: pointer;
+    width: 200px;
+    margin-top: 10px;
+}
+.mapa  {
+    width: 450px;
+    height: 400px;
+    background-color: #c1e8f5;
+    float: right;
+    margin-right: 40px;
+}
+.icones{
+   text-align: center;
+    height: 80px;
+    width: 80px;
 }
 
-.texto3{
+iframe{
+    padding-top: 10px;
+    float: right;
+    margin-right: 12px;
+}
+.mapa h3, p{
+    text-align: center;
+}
+
+.texto3 {
     font-size: 20px;
     float: left;
     background-color: #52A4BF;
     color: #fff;
-    padding-right: 150px;
-    padding-top: 20px;
+    padding-right: 80px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
-.texto3 p{
-    margin-left: 70px;
+.texto3 h3, h4 {
+    margin-left: 50px;
     font-weight: bolder;
+    background-color: #ffffff33;
+    
 }
-.texto{
+
+.texto {
     color: #52A4BF;
     display: flex;
     flex-direction: column;
-    
+    text-align: center;
 }
-.texto h1{
-    border-bottom: 5px solid #333; /* Cor e espessura da linha */
-    padding-bottom: 10px;
+
+.texto h1 {
+    border-bottom: 5px solid #333;
+    /* Cor e espessura da linha */
+    padding-bottom: 5px;
 }
-.texto h3{
+
+.texto h3 {
+    text-align: center;
     padding-top: 70px;
 }
 
@@ -124,21 +181,23 @@ body {
 */
 
 .icones {
-    display: flex; /* Adicione esta linha para usar flexbox */
-    flex-direction: row; /* Por padrão, flex-direction é row, então isso não é necessário, mas é bom manter para clareza */
+    display: flex;
+    /* Adicione esta linha para usar flexbox */
+    flex-direction: row;
+    /* Por padrão, flex-direction é row, então isso não é necessário, mas é bom manter para clareza */
     height: 100%;
     width: 100%;
     align-items: center;
 }
 
 /* Estilize os ícones individuais */
-.icones img{
+.icones img {
     /* Adicione uma margem direita para separar os ícones horizontalmente */
     height: 64px;
     width: 64px;
-} 
+}
 
-.icones li{
+.icones li {
     list-style-type: none;
     height: fit-content;
     align-content: center;
@@ -146,72 +205,14 @@ body {
 
 }
 
-.icones a{
+.icones a {
     list-style-type: none;
     height: 100%;
     width: fit-content;
-
-
-}
-
-.menu {
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    border: none;
-    font-weight: bold;
-    margin-right: 100px;
-    height: 30%;
-}
-
-a.menu-link {
-    margin: 0px;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-li.top-menu {
-    display: flex;
-    padding: 0px;
-}
-
-a.menu-link:hover {
-    background-color: #52A4BF;
-    transition: background-color 0.3s ease;
-}
-
-.alfa ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 300px;
-    display: flex;
-    align-items: center;
-}
-
-.menu li {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-}
-
-.alfa a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
 }
 
 /* Estilizando o dropdown */
-.dropdown div.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #a5a5a5;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
+
 
 /* Mostrar o dropdown ao passar o mouse 
 .menu li.dropdown:hover div.dropdown-content {
@@ -219,44 +220,73 @@ display: block;
 }
 */
 
+
+
+
+
 .logo img {
     width: 100px;
     height: 130px;
     padding-right: 150px;
 }
 
-/* 
+
 .menu li.dropdown:hover {
 background-color: #52A4BF;
 overflow-y: auto;
 display: block;
-height: 150px; Remova esta linha 
+height: 150px; 
 margin-top: 130px;
 }
-*/
 
-.menu li.dropdown:hover {
-    background-color: #52A4BF;
-    overflow-y: auto;
-    display: block;
+
+#top-menu .current-menu-item a::before,
+#top-menu .current_page_item a::before {
+ content: "";
+ position: absolute;
+ z-index: 2;
+ left: 0;
+ right: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Remova a altura fixa do item de menu */
-.menu li.dropdown:hover div.dropdown-content {
-    height: auto; /* Use altura automática para o conteúdo */
-    margin-top: 0; /* Remova a margem superior */
+/* Estilo dos itens da lista */
+
+nav li {
+    display: inline; /* Faz os itens da lista ficarem lado a lado */
+    margin-right: 20px; /* Espaçamento entre os itens (opcional) */
 }
 
 
-div.dropdown-content:hover {}
+#top-menu li a:before {
+ content: "";
+ position: absolute;
+ z-index: -2;
+ left: 0;
+ right: 100%;
+ bottom: 50%;
+ background: #15bf86; /*** COLOR OF THE LINE ***/
+ height: 3px; /*** THICKNESS OF THE LINE ***/
+ -webkit-transition-property: right;
+ transition-property: right;
+ -webkit-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+ -webkit-transition-timing-function: ease-out;
+ transition-timing-function: ease-out;
+} 
 
-.menu li.dropdown {}
-
-div.dropdown-content a:hover {
-    background-color: #52A4BF;
-    transition: background-color 0.3s ease;
+#top-menu li a:hover {
+ opacity: 1 !important;
 }
 
-div.dropdown-content a {
-    display: flex;
+#top-menu li a:hover:before {
+ right: 0;
+}
+
+#top-menu li li a:before {
+ bottom: 10%;
 }
