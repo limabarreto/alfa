@@ -39,6 +39,7 @@
 
 }
 
+
 .info {
     display: flex;
     align-items: center;
@@ -146,12 +147,27 @@ iframe {
 }
 
 
-.texto3 {
+.texto1{
+    background-color: #2a8fb1;
+    width: 520px;
+    margin-top: 150px;
+    height: 40px;
+    display: flex;
+    color: #ffffff;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-weight: bolder;
+}
+.texto2{
+    height: 40px;
+    color: #ffffff;
     background-color: #52A4BF;
-    margin-right: 800px;
-    padding-bottom: 100px;
+    width: 520px;
     text-align: center;
-    margin-top: 100px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-weight: bolder;
 }
 
 #top-menu ul {
@@ -228,4 +244,40 @@ body {
     background-color: #2a8fb1;
     padding: 50px;
     margin-top: 150px;
+}
+
+/*css da tabela de exames.html*/
+.tabela {
+    width: 60%;
+    /* Define a largura da tabela */
+    margin: 0 auto;
+    /* Centraliza a tabela horizontalmente */
+    /*Remove espaços entre as células */
+    text-transform: uppercase;
+    padding-bottom: 300px;
+    margin-top: 300px;
+}
+
+.cor1 {
+    background-color: #52A4BF;
+}
+
+.cor2 {
+    background-color: #8BB6C2;
+}
+
+th,
+td {
+    text-align: center;
+    /* Centraliza o conteúdo das células */
+    padding: 10px;
+    /* Adiciona espaço interno para melhorar a aparência */
+    border: none;
+    /* Adiciona uma borda fina ao redor das células */
+
+}
+
+th {
+    background-color: #52A4BF;
+    /* Cor de fundo para o cabeçalho da tabela */
 }
