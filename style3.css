@@ -138,6 +138,7 @@ button:hover {
     color: #606062;
     padding: 20px;
     width: 300px;
+    background-color: #52A4BF;
 }
 
 iframe {
@@ -280,4 +281,124 @@ td {
 th {
     background-color: #52A4BF;
     /* Cor de fundo para o cabeçalho da tabela */
+}
+
+/* Estilos para os cards de especialidades */
+/* Estilos para a div que contém os cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para os cards *//* Estilos para a div que contém os cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Espaçamento externo para melhor aparência */
+}
+
+/* Estilos para os cards */
+.card {
+    cursor: pointer;
+    width: 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+   /* Adicione um espaçamento (margem) entre os cards de especialidades */
+
+
+}
+
+/* Estilos para o título da especialidade */
+.card h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para a descrição da especialidade */
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Alinhar o h3 ao centro */
+.texto_card {
+    text-align: center;
+    padding: 20px; /* Adicione um espaço em branco ao redor do texto para melhor aparência */
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+/*modal*/
+
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+
+
+
+/*css dos cards dos medicos*/
+
+
+/* Adicione estilos para os cards dos médicos */
+.doctor-card {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+   
+}
+
+.doctor-card img {
+    max-width: 100px; /* Largura máxima da imagem */
+    border-radius: 50%; /* Formato redondo da imagem */
+}
+
+.doctor-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.doctor-card p {
+    font-size: 16px;
 }
