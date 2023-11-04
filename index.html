@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style3.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -82,43 +83,39 @@
 
 
     <div class="top">
-        <div class="section">
+        <div class="section" onmouseover="mostrarIcone(this)">
             <h4>Atendimento Integral em Saúde</h4>
-            <p>Na Clínica Alfa, cuidamos de todos os aspectos da sua saúde. Com uma equipe dedicada e uma gama de
-                especialistas em diversas áreas médicas, estamos aqui para atender às suas necessidades, garantindo que
-                você esteja no caminho certo para o bem-estar.</p>
+            <p>Na Clínica Alfa, cuidamos de todos os aspectos da sua saúde...</p>
         </div>
-        <div class="section">
+        <div class="section" onmouseover="mostrarIcone(this)">
             <h4>Transformando Vidas Através da Medicina Avançada</h4>
             <p>Transformando vidas é o que fazemos de melhor. Nossas instalações de última geração abrangem uma
-                variedade de especialidades médicas, desde cardiologia até ortopedia. Estamos prontos para acompanhá-lo
-                em cada etapa da sua jornada para uma saúde ótima.</p>
+                variedade de especialidades médicas...</p>
         </div>
-        <div class="section">
+        <div class="section" onmouseover="mostrarIcone(this)">
             <h4>Sorria com Confiança: Odontologia de Excelência</h4>
             <p>Sorria com confiança na Clínica Alfa, onde nossos dentistas especializados oferecem atendimento
-                odontológico de excelência. Seja para manter sua saúde bucal ou aprimorar a estética do seu sorriso,
-                estamos preparados para ajudá-lo.</p>
+                odontológico de excelência...</p>
         </div>
     </div>
     <div class="bottom">
-        <div class="section">
+        <div class="section" onmouseover="mostrarIcone(this)">
             <h4>Abordagens Inovadoras para Doenças Crônicas</h4>
-            <p>No tratamento de doenças crônicas, a Clínica Alfa é líder em abordagens inovadoras. Nossos especialistas
-                trabalham juntos para fornecer tratamentos personalizados e eficazes, visando recuperar a qualidade de
-                vida.</p>
+            <p>No tratamento de doenças crônicas, a Clínica Alfa é líder em abordagens inovadoras...</p>
         </div>
-        <div class="section">
+        <div class="section" onmouseover="mostrarIcone(this)">
             <h4>Saúde Mental: Cuidado com Empatia</h4>
             <p>Sua saúde mental é uma parte vital do seu bem-estar geral, e na Clínica Alfa, cuidamos de você com
-                empatia e profissionalismo, oferecendo suporte em áreas que vão desde psicologia até psiquiatria.</p>
+                empatia e profissionalismo...</p>
         </div>
-        <div class="section">
+        <div class="section" onmouseover="mostrarIcone(this)">
             <h4>Beleza e Saúde se Encontram Aqui</h4>
             <p>Beleza e saúde se encontram na Clínica Alfa, onde procedimentos estéticos seguros e eficazes ajudam você
-                a brilhar. Nossa variedade de especialidades médicas garante que, independentemente do seu objetivo de
-                saúde, estaremos aqui para ajudar. Venha descobrir o que a Clínica Alfa pode fazer por você.</p>
+                a brilhar...</p>
         </div>
+    </div>
+    <div class="icone">
+        <!-- Coloque aqui o código para exibir o ícone desejado -->
     </div>
 </body>
 
@@ -136,5 +133,32 @@
 
 
 
+
+<script>
+
+
+
+
+function mostrarIcone(section) {
+    const divIcone = document.querySelector(".icone");
+    
+    // Copia o conteúdo da div .section para a div .icone
+    const titulo = section.querySelector("h4").textContent;
+    const paragrafo = section.querySelector("p").textContent;
+    
+    const divIconeConteudo = document.createElement("div");
+    divIconeConteudo.innerHTML = `
+        <h4>${titulo}</h4>
+        <p>${paragrafo}</p>
+    `;
+    
+    divIcone.innerHTML = ""; // Limpa o conteúdo atual da div .icone
+    divIcone.appendChild(divIconeConteudo);
+
+    // Exibe a div .icone
+    divIcone.style.display = "block";
+}
+
+</script>
 
 </html>

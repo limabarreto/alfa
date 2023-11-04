@@ -6,10 +6,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeButton = document.getElementById("close-button");
     const doctorsContainer = document.querySelector(".doctors");
 
+    // Crie um objeto com os médicos por especialidade
+    const doctorsData = {
+        "Anestesiologia": [
+            { name: "Dr. João Silva", crm: "12345", image: "doctor1.jpg" },
+            { name: "Dra. Maria Santos", crm: "67890", image: "doctor2.jpg" }
+        ],
+        "Angiologia": [
+            { name: "Dr. Pedro Souza", crm: "54321", image: "doctor3.jpg" }
+        ],
+        "Cardiologia": [
+            { name: "Dra. Laura Fernandes", crm: "98765", image: "doctor4.jpg" },
+            { name: "Dr. Carlos Oliveira", crm: "45678", image: "doctor5.jpg" }
+        ],
+        // Adicione mais especialidades e médicos conforme necessário
+    };
+
     cards.forEach(card => {
         card.addEventListener("click", function () {
             openModal(card);
-            loadDoctors();
+            loadDoctors(card.querySelector("h2").textContent);
         });
     });
 
@@ -29,34 +45,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    function loadDoctors() {
-        // Exemplo de dados de médicos (substitua pelos seus dados)
-        const doctorsData = [
-            { name: "Dr. João Silva", crm: "12345", image: "doctor1.jpg" },
-            { name: "Dra. Maria Santos", crm: "67890", image: "doctor2.jpg" },
-            { name: "Dr. Carlos Oliveira", crm: "54321", image: "doctor3.jpg" }
-        ];
-
+    function loadDoctors(specialityName) {
         doctorsContainer.innerHTML = "";
 
-        doctorsData.forEach(doctor => {
-            const doctorCard = document.createElement("div");
-            doctorCard.classList.add("doctor-card");
+        if (doctorsData.hasOwnProperty(specialityName)) {
+            const doctors = doctorsData[specialityName];
+            doctors.forEach(doctor => {
+                const doctorCard = document.createElement("div");
+                doctorCard.classList.add("doctor-card");
 
-            const doctorImage = document.createElement("img");
-            doctorImage.src = doctor.image;
+                const doctorImage = document.createElement("img");
+                doctorImage.src = doctor.image;
 
-            const doctorName = document.createElement("h3");
-            doctorName.textContent = doctor.name;
+                const doctorName = document.createElement("h3");
+                doctorName.textContent = doctor.name;
 
-            const doctorCRM = document.createElement("p");
-            doctorCRM.textContent = "CRM: " + doctor.crm;
+                const doctorCRM = document.createElement("p");
+                doctorCRM.textContent = "CRM: " + doctor.crm;
 
-            doctorCard.appendChild(doctorImage);
-            doctorCard.appendChild(doctorName);
-            doctorCard.appendChild(doctorCRM);
+                doctorCard.appendChild(doctorImage);
+                doctorCard.appendChild(doctorName);
+                doctorCard.appendChild(doctorCRM);
 
-            doctorsContainer.appendChild(doctorCard);
-        });
+                doctorsContainer.appendChild(doctorCard);
+            });
+        }
     }
 });

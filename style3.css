@@ -168,7 +168,17 @@ iframe {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    font-weight: bolder;
+    font-weight: 500;
+}
+
+/* Estilize as divs .section e .icone como desejar */
+.section {
+    cursor: pointer;
+}
+
+.icone {
+    display: none;
+    /* Adicione estilos para a div do ícone aqui, se necessário */
 }
 
 #top-menu ul {
@@ -283,56 +293,37 @@ th {
     /* Cor de fundo para o cabeçalho da tabela */
 }
 
-/* Estilos para os cards de especialidades */
-/* Estilos para a div que contém os cards */
-.card-container {
-    display: flex;
-    justify-content: space-between;
-}
 
-/* Estilos para os cards *//* Estilos para a div que contém os cards */
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px; /* Espaçamento externo para melhor aparência */
-}
 
 /* Estilos para os cards */
-.card {
-    cursor: pointer;
-    width: 300px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px);
+    box-sizing: border-box;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-   /* Adicione um espaçamento (margem) entre os cards de especialidades */
-
-
 }
 
-/* Estilos para o título da especialidade */
-.card h2 {
-    font-size: 24px;
-    color: #333;
+.card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
 }
-
-/* Estilos para a descrição da especialidade */
-.card p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Alinhar o h3 ao centro */
-.texto_card {
-    text-align: center;
-    padding: 20px; /* Adicione um espaço em branco ao redor do texto para melhor aparência */
-    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+.card h2{
+    color: #2a8fb1;
 }
 
 
-/*modal*/
 
 
 /* Estilos para o modal */
@@ -402,3 +393,19 @@ th {
 .doctor-card p {
     font-size: 16px;
 }
+
+
+/*style para pagina convenio.html*/
+
+.planos img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    border: 2px solid #ccc; /* Adiciona uma borda de 2px sólida cinza ao redor da imagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à imagem */
+    margin: 10px; /* Adiciona um espaço de 10px ao redor da imagem */
+    transition: transform 0.2s; /* Adiciona uma transição suave ao passar o mouse sobre a imagem */
+}
+
+.planos img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho da imagem ao passar o mouse sobre ela */
+}
+
