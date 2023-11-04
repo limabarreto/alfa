@@ -40,7 +40,9 @@
             </div>
         </div>
     </div>
+    <div class="img_back">
 
+    </div>
 
     <div class="texto3">
         <div class="texto1">
@@ -49,7 +51,6 @@
         <div class="texto2">
             <p>Mais de 20 especialidades médicas</p>
         </div>
-
     </div>
 
     <div class="mapa">
@@ -76,7 +77,7 @@
                 <h4>07h às 13h</h4>
             </div>
         </div>
-        <button>AGENDE AQUI</button>
+        <a class="botao" href="http://wa.me/5574999893211">AGENDE AQUI</a>
     </div>
 
 
@@ -139,25 +140,25 @@
 
 
 
-function mostrarIcone(section) {
-    const divIcone = document.querySelector(".icone");
-    
-    // Copia o conteúdo da div .section para a div .icone
-    const titulo = section.querySelector("h4").textContent;
-    const paragrafo = section.querySelector("p").textContent;
-    
-    const divIconeConteudo = document.createElement("div");
-    divIconeConteudo.innerHTML = `
+    function mostrarIcone(section) {
+        const divIcone = document.querySelector(".icone");
+
+        // Copia o conteúdo da div .section para a div .icone
+        const titulo = section.querySelector("h4").textContent;
+        const paragrafo = section.querySelector("p").textContent;
+
+        const divIconeConteudo = document.createElement("div");
+        divIconeConteudo.innerHTML = `
         <h4>${titulo}</h4>
         <p>${paragrafo}</p>
     `;
-    
-    divIcone.innerHTML = ""; // Limpa o conteúdo atual da div .icone
-    divIcone.appendChild(divIconeConteudo);
 
-    // Exibe a div .icone
-    divIcone.style.display = "block";
-}
+        divIcone.innerHTML = ""; // Limpa o conteúdo atual da div .icone
+        divIcone.appendChild(divIconeConteudo);
+
+        // Exibe a div .icone
+        divIcone.style.display = "block";
+    }
 
 </script>
 
