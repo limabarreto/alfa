@@ -257,6 +257,12 @@ body {
     text-align: center;
 }
 
+.paragrafo{
+    text-align: center;
+    margin-top: 60px;
+    color: #2a8fb1;
+    
+}
 .top, .bottom {
     display: flex;
     justify-content: center;
@@ -278,79 +284,115 @@ body {
     gap: 15px;
     
 }
+.txt{
+    text-align: center;
+    color: #2a8fb1;
+    margin-top: 80px;
+}
 p{
     text-align: justify;
 }
 
 /*css da tabela de exames.html*/
-.tabela {
-    width: 60%;
-    /* Define a largura da tabela */
-    margin: 0 auto;
-    /* Centraliza a tabela horizontalmente */
-    /*Remove espaços entre as células */
-    text-transform: uppercase;
-    padding-bottom: 300px;
-    margin-top: 300px;
-}
-
-.cor1 {
-    background-color: #52A4BF;
-}
-
-.cor2 {
-    background-color: #8BB6C2;
-}
-
-th,
-td {
-    text-align: center;
-    /* Centraliza o conteúdo das células */
-    padding: 10px;
-    /* Adiciona espaço interno para melhorar a aparência */
-    border: none;
-    /* Adiciona uma borda fina ao redor das células */
-
-}
-
-th {
-    background-color: #52A4BF;
-    /* Cor de fundo para o cabeçalho da tabela */
-}
-
-
-
-/* Estilos para os cards */
-
-
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 120px;
-}
-
-.column {
-    flex-basis: calc(33.33% - 20px);
-    box-sizing: border-box;
-    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
-    background-color: #ebebeb;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 0 0 20px 0;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    min-height: 150px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.2s;
 }
-.card h2{
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+/* Estilos para os cards */
+/* Your existing CSS styles */
+/* ... */
+
+/* Styles for the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    color: #2a8fb1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 5px 0;
+    border-top: 1px solid #2a8fb1; /* Add a top border to separate sections */
+    padding-top: 10px;
+}
+
+.card strong {
     color: #2a8fb1;
 }
+
+.card p strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.card p::before {
+    content: ""; /* Remove the bullet point */
+}
+
+.card .value {
+    display: inline-block;
+    background-color: #2a8fb1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
 
 
 
